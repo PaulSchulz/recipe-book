@@ -1,8 +1,5 @@
 .PHONY: deps clean dist-clean
 
-deps:
-	sudo apt install texlive-full texlive-luatex
-
 recipe-book.pdf: recipe-book.tex
 	# Repeat to pickup table of contects and index
 	lualatex recipe-book.tex \
@@ -18,5 +15,8 @@ clean:
           recipe-book.toc \
           texput.log
 
-dist-clean:
+dist-clean: clean
 	-rm recipe-book.pdf
+
+deps:
+	sudo apt install texlive-full texlive-luatex
