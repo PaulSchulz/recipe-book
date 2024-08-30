@@ -1,0 +1,105 @@
+\documentclass[11pt]{book} 
+%\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage{tempora}
+\usepackage[english, ukrainian]{babel}
+\usepackage[T2A]{fontenc} % Output font encoding for international characters
+\usepackage{cuisine}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\setotherlanguages{ukrainian}
+ 
+\newfontfamily{\cyrillicfont}{Noto Serif}
+\newfontfamily{\cyrillicfonttt}{Noto Mono}
+\newfontfamily{\cyrillicfontsf}{Noto Sans Mono}
+
+% Customisations
+\usepackage{parskip}
+
+\usepackage{tocloft}% to configure the ToC <<<<<
+\setlength{\cftchapnumwidth}{4ex}% set the width to the section number in the ToC <<<<<
+
+\usepackage[multiple]{footmisc}
+
+% Flags: https://www.flaticon.com/packs/flags-collection?word=flags
+\input{flags.tex}
+
+\usepackage{multicol}
+\usepackage{longtable}
+
+%\newcommand{\publishingdate}{\today}
+\newcommand{\publishingdate}{August 2024}
+\newcommand{\publishingversion}{PDF Version}
+%\newcommand{\publishingversion}{Printed Version}
+\newcommand{\isbn}{123-45-67890-12-8} % Correct checksum required -8
+
+\usepackage[ISBN=\isbn,SC0]{ean13isbn}
+%\usepackage[ISBN=978-80-85955-35-4,SC0]{ean13isbn}
+%\EANisbn[SC3]
+
+\title{Recipe Book}
+\author{}
+\date{\publishingdate}
+
+\makeindex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+%\pagecolor{ocre}
+%\chapter{Tartes}
+
+\input{recipes}
+
+%\chapter{Meat}
+%\input{Recipes/Borscht/recipe}
+%\input{Recipes/RoastOrc}
+
+%\chapter{Chicken}
+%\input{Recipes/ChickenKiev}
+%\input{Recipes/ChickenPlov}
+
+%\chapter{Fish}
+%\input{Recipes/Bar-Four}
+%\input{Recipes/SaumonRachel}
+
+%\chapter{Vegetables}
+%\input{Recipes/ChouFleur}
+
+%\chapter{Pasta}
+%\input{Recipes/Carbonnade}
+%\input{Recipes/PastaRagu}
+%\chapter{Poissons}
+
+%\chapter{Desserts}
+%\input{Recipes/RaspberryCobbler}
+
+%\chapter{Cakes}
+%\input{Recipes/UkrainianAppleCake}
+%\input{Recipes/HoneyCake}
+
+%\chapter{Biscuits}
+%\input{Recipes/ANZACBiscuits}
+
+%\chapter{Savoury}
+%\input{Recipes/Scones}
+
+%\chapter{Quick and Easy}
+%\input{Recipes/Hotdogs}
+
+%\chapter{Snacks}
+%\input{Recipes/Pampusky}
+%\input{Recipes/Smores}
+
+%\chapter{Breads}
+%\input{Recipes/Palianytsia}
+
+%\chapter{Other}
+%\input{Recipes/KhmeliSuneli}
+
+\printindex
+
+\end{document}

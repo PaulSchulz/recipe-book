@@ -1,0 +1,77 @@
+#+TITLE: Recipe Book 
+
+* Recipe Book
+** Contents                                                                 :TOC:
+- [[#recipe-book][Recipe Book]]
+  - [[#introduction][Introduction]]
+  - [[#creeating-documentation-with-lualatex][Creeating Documentation with LuaLatex]]
+
+** Introduction
+
+This repository contains code and recipes to produce a basic recipe book with
+\LaTeX, using the ``cuisine.sty'' style.
+
+This has been setup to as part of a larger project (``The Leafspring Army Cook
+Book'') to provide a set of examples and templates for other people to make
+recipe contributions.
+
+Recipe contributions are more welcome. If you find this repository useful in
+itself, then feel free to make use of it under the GNU GPL v3 License. See the
+``LICENSE'' file for details, but in essence (TL;DR):
+
+  1. Anyone can copy, modify and distribute this software.
+  2. You have to include the license and copyright notice with each and every
+     distribution.
+  3. You can use this software privately.
+  4. You can use this software for commercial purposes.
+  5. If you dare build your business solely from this code, you risk
+     open-sourcing the whole code base.
+  6. If you modify it, you have to indicate changes made to the code.
+  7. Any modifications of this code base MUST be distributed with the same
+     license, GPLv3.
+  8. This software is provided without warranty.
+  9. The software author or license can not be held liable for any damages
+     inflicted by the software.
+
+*** Dependancies
+
+This document has been written in LaTeX using Overleaf (online and local).
+When cloning and creating this document the following is required:
+
+**** lualatex
+
+LuaLatex is used to compile the latex (tex) code into a PDF. This is installed
+on a Ubuntu/Debian based system with:
+
+#+begin_src shell
+  apt install lualatex
+#+end_src
+
+**** OverLeaf (Online)
+
+See: https://overleaf.com
+
+**** Overleaf (Local)
+
+To install a local version of Overleaf
+see: https://github.com/overleaf/toolkit
+
+** Creeating Documentation with LuaLatex
+
+If LuaLatex is installed the document (``recipe-book.pdf'') can be built with:
+
+#+begin_src shell
+make
+#+end_src
+
+To remove temporary file, and clean up:
+
+#+begin_src shell
+make clean
+#+end_src
+
+To remove all created files, use:
+
+#+begin_src shell
+make dist-clean
+#+end_src
