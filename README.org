@@ -2,8 +2,6 @@
 
 [[https://github.com/PaulSchulz/recipe-book/actions/workflows/makefile.yml][file:https://github.com/PaulSchulz/recipe-book/actions/workflows/makefile.yml/badge.svg]]
 
-
-
 * Recipe Book
 ** Contents                                                                 :TOC:
 - [[#recipe-book][Recipe Book]]
@@ -61,21 +59,22 @@ To install a local version of Overleaf
 see: https://github.com/overleaf/toolkit
 
 ** Creating Documentation with LuaLatex
+To install dependancies (texlive and lualatex) use:
+#+begin_src shell
+make deps
+#+end_src
 
 If LuaLatex is installed the document (``recipe-book.pdf'') can be built with:
-
 #+begin_src shell
 make
 #+end_src
 
 To remove temporary file, and clean up:
-
 #+begin_src shell
 make clean
 #+end_src
 
 To remove all created files, use:
-
 #+begin_src shell
 make dist-clean
 #+end_src
