@@ -1,6 +1,7 @@
 #+TITLE: Recipe Book
 
-[[file:https://github.com/PaulSchulz/recipe-book/actions/workflows/makefile.yml/badge.svg][https://github.com/PaulSchulz/recipe-book/actions/workflows/makefile.yml]]
+[[https://github.com/PaulSchulz/recipe-book/actions/workflows/makefile.yml][file:https://github.com/PaulSchulz/recipe-book/actions/workflows/makefile.yml/badge.svg]]
+
 
 
 * Recipe Book
