@@ -1,18 +1,20 @@
-#+TITLE: Recipe Book 
+#+TITLE: Recipe Book
+
+[[https://github.com/PaulSchulz/recipe-book/actions][file:https://github.com/PaulSchulz/recipe-book/workflows/CI/badge.svg]]
 
 * Recipe Book
 ** Contents                                                                 :TOC:
 - [[#recipe-book][Recipe Book]]
   - [[#introduction][Introduction]]
-  - [[#creeating-documentation-with-lualatex][Creeating Documentation with LuaLatex]]
+  - [[#creating-documentation-with-lualatex][Creating Documentation with LuaLatex]]
 
 ** Introduction
 
 This repository contains code and recipes to produce a basic recipe book with
-\LaTeX, using the ``cuisine.sty'' style.
+LaTeX, using the cuisine.sty style.
 
-This has been setup to as part of a larger project (``The Leafspring Army Cook
-Book'') to provide a set of examples and templates for other people to make
+This has been setup to as part of a larger project (The Leafspring Army Cook
+Book) to provide a set of examples and templates for other people to make
 recipe contributions.
 
 Recipe contributions are more welcome. If you find this repository useful in
@@ -44,7 +46,7 @@ LuaLatex is used to compile the latex (tex) code into a PDF. This is installed
 on a Ubuntu/Debian based system with:
 
 #+begin_src shell
-  apt install lualatex
+  sudo apt install texlive-full texlive-luatex
 #+end_src
 
 **** OverLeaf (Online)
@@ -56,7 +58,7 @@ See: https://overleaf.com
 To install a local version of Overleaf
 see: https://github.com/overleaf/toolkit
 
-** Creeating Documentation with LuaLatex
+** Creating Documentation with LuaLatex
 
 If LuaLatex is installed the document (``recipe-book.pdf'') can be built with:
 
