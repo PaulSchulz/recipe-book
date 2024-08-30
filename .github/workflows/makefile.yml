@@ -14,14 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: configure
-      run: ./configure
+    - name: dependancies
+      run: sudo apt install texlive-full texlive-luatex
 
-    - name: Install dependencies
+    - name: Build
       run: make
-
-    - name: Run check
-      run: make check
-
-    - name: Run distcheck
-      run: make distcheck
