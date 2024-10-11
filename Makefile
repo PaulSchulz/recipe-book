@@ -1,6 +1,6 @@
 .PHONY: deps clean dist-clean
 
-recipe-book.pdf: recipe-book.tex
+recipe-book.pdf: recipe-book.tex recipes
 	# Repeat to pickup table of contects and index
 	lualatex recipe-book.tex \
 	&& lualatex recipe-book.tex
